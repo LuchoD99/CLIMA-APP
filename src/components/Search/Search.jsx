@@ -1,5 +1,12 @@
 import React from 'react';
 
-export default function Search() {
-    return <div>Search</div>;
+export default function Search(prop) {
+    return (
+        <div>
+            <input type="text" placeholder="Ciudad.." />
+            <button onClick={() => prop.onSearch('Buscando...')}>
+                Agregar
+            </button>
+        </div>
+    );
 }
