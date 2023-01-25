@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './Search.css';
-export default function SearchBar({ onSearch }) {
+import { useDispatch } from 'react-redux';
+import { Ciudades } from '../redux/action';
+export default function SearchBar() {
     const [city, setCity] = useState('');
+    const dispatch = useDispatch();
     function onSubmit(e) {
         e.preventDefault();
-        onSearch(city);
+        dispatch(Ciudades(city));
         setCity('');
     }
     function onChange(e) {

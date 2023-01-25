@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Card({ min, max, name, img, onClose, id }) {
     return (
         <div className="card">
@@ -7,7 +7,9 @@ export default function Card({ min, max, name, img, onClose, id }) {
                 <button onClick={() => onClose(id)}>X</button>
             </div>
             <div>
-                <h5>{name}</h5>
+                <Link to={`/ciudad/${id}`}>
+                    <h5>{name}</h5>
+                </Link>
                 <div>
                     <div>
                         <p>Min</p>

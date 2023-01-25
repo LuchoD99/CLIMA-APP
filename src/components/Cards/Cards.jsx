@@ -3,10 +3,10 @@ import Card from '../Card/Card';
 // import data from '../../data';
 
 export default function Cards({ cities, onClose }) {
-    if (cities) {
-        return (
-            <div className="cards">
-                {cities.map((c) => (
+    return (
+        <div className="cards">
+            {cities ? (
+                cities.map((c) => (
                     <Card
                         key={c.id}
                         max={c.max}
@@ -16,10 +16,10 @@ export default function Cards({ cities, onClose }) {
                         onClose={onClose}
                         id={c.id}
                     />
-                ))}
-            </div>
-        );
-    } else {
-        return <div>Sin ciudades</div>;
-    }
+                ))
+            ) : (
+                <div>No hay ciudad</div>
+            )}
+        </div>
+    );
 }
