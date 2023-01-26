@@ -28,7 +28,7 @@ export default function reducer(state = initState, action) {
             return {
                 ...state,
                 CiudadDetalles: state.AllCiudad.filter(
-                    (e) => e.id === action.payload
+                    (e) => e.id === parseInt(action.payload)
                 ),
             };
         default:

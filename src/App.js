@@ -28,7 +28,7 @@ function App() {
                 {/* <Route path="/" element={<Cards cities={cities} />} /> */}
                 {/* <Cards cities={cities} onClose={onClose} /> */}
                 <Route path="/about" element={<About />} />
-                <Route path="/ciudad/:id" element={<Ciudad />} />
+                <Route path="/ciudad/:userId" element={<Ciudad />} />
             </Routes>
         </React.Fragment>
     );

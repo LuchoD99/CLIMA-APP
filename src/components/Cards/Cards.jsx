@@ -15,9 +15,9 @@ export default function Cards() {
     return (
         <div className="cards">
             {cities.length ? (
-                cities.map((c) => (
+                cities.map((c, k) => (
                     <Card
-                        key={c.id}
+                        key={k}
                         max={c.max}
                         min={c.min}
                         name={c.name}

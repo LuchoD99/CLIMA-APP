@@ -5,16 +5,27 @@ import { useParams } from 'react-router-dom';
 import { CiudadDetalles } from '../redux/action';
 export default function Ciudad() {
     const city = useSelector((state) => state.CiudadDetalles);
-    const id = useParams();
+    let { userId } = useParams();
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(CiudadDetalles(id));
-    }, [dispatch, id]);
+        dispatch(CiudadDetalles(userId));
+    }, [dispatch, userId]);
     return (
         <div>
             {city.length ? (
                 <div>
-                    <h2>{city.name}</h2>
+                    <h2>{city[0].name}</h2>
+                    <img
+                        className="iconoClima"
+                        src={
+                            'http://openweathermap.org/img/wn/' +
+                            city[0].img +
+                            '@2x.png'
+                        }
+                        width="80"
+                        height="80"
+                        alt="img not found"
+                    />
                     <div>
                         <div>Temperatura: {city[0].temp}</div>
                         <div>Clima: {city[0].weather}</div>

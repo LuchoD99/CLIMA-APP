@@ -1,15 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Link, NavLink } from 'react-router-dom';
+import { CiudadDetalles } from '../redux/action';
 export default function Card({ min, max, name, img, onClose, id }) {
+    // const dispatch = useDispatch();
+    // function Prueba(id) {
+    //     dispatch(CiudadDetalles(id));
+    // }
     return (
         <div className="card">
             <div>
                 <button onClick={() => onClose(id)}>X</button>
             </div>
             <div>
-                <Link to={`/ciudad/${id}`}>
+                <NavLink to={`/ciudad/${id}`}>
                     <h5>{name}</h5>
-                </Link>
+                </NavLink>
+                {/* <button onClick={() => Prueba(id)}>{name}</button> */}
                 <div>
                     <div>
                         <p>Min</p>
