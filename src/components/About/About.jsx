@@ -5,7 +5,7 @@ function About() {
         <div>
             <h3>Soy Luciano</h3>
             <p>
-                Esta aplicación está creada por Luciano <hr /> e informa las
+                Esta aplicación está creada por Luciano e informa las
                 condiciones meteorológicas de las diferentes ciuadades del
                 mundo.
             </p>
