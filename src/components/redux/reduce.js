@@ -13,6 +13,7 @@ export default function reducer(state = initState, action) {
                 AllCiudad: [...state.AllCiudad, action.payload],
                 AddCiudad: [...state.AddCiudad, action.payload],
             };
+
         case ELIMINAR_CIUDAD:
             return {
                 ...state,

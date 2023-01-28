@@ -1,4 +1,4 @@
-.center {
+/* .center {
     padding: 15px 5px;
     display: flex;
     justify-content: flex-end;
@@ -20,4 +20,8 @@
 .boton:hover {
     background-color: #0da201;
     cursor: pointer;
+} */
+.center {
+    display: flex;
+    justify-content: center;
 }
