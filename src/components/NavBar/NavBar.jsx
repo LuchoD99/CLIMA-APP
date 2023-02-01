@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,7 @@ export default function NavBar({ onSearch }) {
                 <img className="image" src={inicio} alt="img not found" />
             </Link>
             <Link to="/about">
-                {/* <About /> */}
-                <span className="about">About</span>
+                <a className="about">About</a>
             </Link>
             <SearchBar className="buscador" onSearch={onSearch} />
         </nav>

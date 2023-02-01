@@ -1,4 +1,4 @@
-/* .center {
+.center {
     padding: 15px 5px;
     display: flex;
     justify-content: flex-end;
@@ -11,6 +11,7 @@
     border-radius: 5px;
     margin: 0 5px;
     border: 10px;
+    width: 20rem;
 }
 .boton {
     background-color: #81e26e;
@@ -20,8 +21,27 @@
 .boton:hover {
     background-color: #0da201;
     cursor: pointer;
-} */
-.center {
-    display: flex;
-    justify-content: center;
 }
+/* .center {
+    position: absolute;
+    margin-left: 180rem;
+    display: flex;
+    margin-top: 30px;
+}
+.texto {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 10px;
+}
+.boton {
+    background-color: #81e26e;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.boton:hover {
+    background-color: #0da201;
+    cursor: pointer;
+}
+ */
