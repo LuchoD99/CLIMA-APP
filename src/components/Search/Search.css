@@ -1,7 +1,6 @@
 .center {
     padding: 15px 5px;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex; */
     background-color: transparent;
     border: 5px;
     border-color: #cef3ea;
@@ -12,14 +11,20 @@
     margin: 0 5px;
     border: 10px;
     width: 20rem;
+    height: 20px;
 }
 .boton {
-    background-color: #81e26e;
-    padding: 5px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    text-align: center;
+    margin-right: 15px;
+    text-transform: uppercase;
+    padding: 7px;
+    width: 90px;
+    height: 31px;
     border-radius: 5px;
 }
+
 .boton:hover {
-    background-color: #0da201;
     cursor: pointer;
 }
 /* .center {
