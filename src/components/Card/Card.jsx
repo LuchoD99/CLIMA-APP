@@ -1,19 +1,21 @@
 import React from 'react';
-
+import './Card.css';
 import { NavLink } from 'react-router-dom';
 
 export default function Card({ min, max, name, img, onClose, id }) {
     return (
         <div className="card">
-            <div>
-                <button onClick={() => onClose(id)}>X</button>
+            <div className="eliminar">
+                <button className="btn" onClick={() => onClose(id)}>
+                    X
+                </button>
             </div>
             <div>
-                <NavLink to={`/ciudad/${id}`}>
-                    <h5>{name}</h5>
-                </NavLink>
-                {/* <button onClick={() => Prueba(id)}>{name}</button> */}
-                <div>
+                <div className="title">
+                    <NavLink to={`/ciudad/${id}`}>
+                        <h5 className="card-title">{name}</h5>
+                    </NavLink>
+                    {/* <button onClick={() => Prueba(id)}>{name}</button> */}
                     <img
                         className="iconoClima"
                         src={
@@ -21,18 +23,16 @@ export default function Card({ min, max, name, img, onClose, id }) {
                             img +
                             '@2x.png'
                         }
-                        width="80"
-                        height="80"
-                        alt=""
+                        alt="img not found"
                     />
                 </div>
-                <div>
+                <div className="content">
                     <div>
-                        <p>Min</p>
+                        <p>min</p>
                         <p>{min}°</p>
                     </div>
                     <div>
-                        <p>Max</p>
+                        <p>máx</p>
                         <p>{max}°</p>
                     </div>
                 </div>

@@ -1,0 +1,53 @@
+.card {
+    margin: 20px;
+    width: 18rem;
+    padding: 5px;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    border: ridge;
+}
+.card-title {
+    margin-bottom: 15px;
+}
+.eliminar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+.btn {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: #c70039;
+    border-radius: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.title {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+.card-title {
+    display: flex;
+    text-align: center;
+    text-decoration: dashed;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.iconoClima {
+    width: 90px;
+    height: 90px;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}

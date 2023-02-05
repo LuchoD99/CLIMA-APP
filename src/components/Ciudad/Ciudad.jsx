@@ -44,7 +44,7 @@ export default function Ciudad() {
                     </div>
                 </div>
             ) : (
-                <div>holaa</div>
+                <div>Error , cargando</div>
             )}
         </div>
     );
