@@ -1,0 +1,50 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ciudad {
+    display: flex;
+    width: 40rem;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    border: ridge;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.name {
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+.iconoClima {
+    width: 120px;
+    height: 120px;
+}
+.datos {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.datos div {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+.botones {
+    padding: 5px;
+}
+.btn2 {
+    padding: 10px;
+    text-transform: uppercase;
+    border: ridge;
+    background-color: rgba(40, 40, 40, 0.4);
+    border-radius: 25px;
+}
+.btn2:hover {
+    cursor: pointer;
+}

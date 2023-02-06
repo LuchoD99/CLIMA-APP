@@ -12,7 +12,7 @@ export default function NavBar({ onSearch }) {
                 <img className="image" src={inicio} alt="img not found" />
             </Link>
             <Link to="/about">
-                <a className="about">About</a>
+                <a className="about">sobre mi</a>
             </Link>
             <SearchBar className="buscador" onSearch={onSearch} />
         </nav>

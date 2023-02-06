@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { CiudadDetalles } from '../redux/action';
+import './Ciudad.css';
 export default function Ciudad() {
     let city = useSelector((state) => state.CiudadDetalles);
     let navigate = useNavigate();
@@ -16,10 +17,10 @@ export default function Ciudad() {
         navigate('/');
     }
     return (
-        <div>
+        <div className="center">
             {city.length ? (
-                <div>
-                    <h2>{city[0].name}</h2>
+                <div className="ciudad">
+                    <h2 className="name">{city[0].name}</h2>
                     <img
                         className="iconoClima"
                         src={
@@ -27,20 +28,20 @@ export default function Ciudad() {
                             city[0].img +
                             '@2x.png'
                         }
-                        width="80"
-                        height="80"
                         alt="img not found"
                     />
-                    <div>
-                        <div>Temperatura: {city[0].temp}</div>
+                    <div className="datos">
+                        <div>Temperatura: {city[0].temp} º</div>
                         <div>Clima: {city[0].weather}</div>
                         <div>Viento: {city[0].wind}</div>
-                        <div>Cantidad de nubes:{city[0].clouds}</div>
-                        <div>Latitud: {city[0].latitud}º</div>
-                        <div>Longitud: {city[0].longitud}º</div>
+                        <div>Cantidad de nubes: {city[0].clouds}</div>
+                        <div>Latitud: {city[0].latitud} º</div>
+                        <div>Longitud: {city[0].longitud} º</div>
                     </div>
-                    <div>
-                        <button onClick={() => Back()}>Atras</button>
+                    <div className="botones">
+                        <button className="btn2" onClick={() => Back()}>
+                            Atras
+                        </button>
                     </div>
                 </div>
             ) : (

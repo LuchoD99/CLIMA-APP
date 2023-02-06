@@ -1,0 +1,40 @@
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detalle {
+    display: flex;
+    width: 40rem;
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    border: ridge;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+h3 {
+    font-size: 30px;
+}
+.credito {
+    font-size: 20px;
+}
+p {
+    font-size: 30px;
+}
+.btn3 {
+    padding: 10px;
+    text-transform: uppercase;
+    border: ridge;
+    background-color: rgba(31, 28, 133, 0.68);
+    border-radius: 25px;
+    color: #ffff;
+}
+.btn3:hover {
+    cursor: pointer;
+}
