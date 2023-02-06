@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { CiudadDetalles } from '../redux/action';
+import Error from '../Error/Error';
 import './Ciudad.css';
 export default function Ciudad() {
     let city = useSelector((state) => state.CiudadDetalles);
@@ -45,7 +46,7 @@ export default function Ciudad() {
                     </div>
                 </div>
             ) : (
-                <div>Error , cargando</div>
+                <Error />
             )}
         </div>
     );
