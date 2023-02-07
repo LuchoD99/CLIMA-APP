@@ -7,7 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px;
+    gap: 20px;
     font-family: 'Roboto';
     width: 400px;
     height: 400px;
@@ -19,4 +21,15 @@
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     font-size: 50px;
     text-transform: uppercase;
+}
+.btn4 {
+    padding: 10px;
+    text-transform: uppercase;
+    border: ridge;
+    background-color: rgba(31, 28, 133, 0.68);
+    border-radius: 25px;
+    color: #ffff;
+}
+.btn4:hover {
+    cursor: pointer;
 }
