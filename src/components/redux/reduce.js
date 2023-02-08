@@ -1,4 +1,9 @@
-import { ELIMINAR_CIUDAD, CIUDAD_CARGADA, CIUDAD_DETALLES } from './action';
+import {
+    ELIMINAR_CIUDAD,
+    CIUDAD_CARGADA,
+    CIUDAD_DETALLES,
+    VACIAR_DETALLES,
+} from './action';
 
 const initState = {
     AllCiudad: [],
@@ -31,6 +36,11 @@ export default function reducer(state = initState, action) {
                 CiudadDetalles: state.AllCiudad.filter(
                     (e) => e.id === parseInt(action.payload)
                 ),
+            };
+        case VACIAR_DETALLES:
+            return {
+                ...state,
+                CiudadDetalles: action.payload,
             };
         default:
             return state;

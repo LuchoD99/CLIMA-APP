@@ -1,6 +1,7 @@
 export const CIUDAD_CARGADA = 'CIUDAD_CARGADA';
 export const ELIMINAR_CIUDAD = 'ELIMINAR_CIUDAD';
 export const CIUDAD_DETALLES = 'CIUDAD_DETALLES';
+export const VACIAR_DETALLES = 'VACIAR_DETALLES';
 
 export function Ciudades(ciudad) {
     return function (dispatch) {
@@ -46,6 +47,13 @@ export function CiudadDetalles(idCiudad) {
         type: CIUDAD_DETALLES,
         payload: idCiudad,
     };
+}
+
+export function VaciarDet(dispatch) {
+    return dispatch({
+        type: VACIAR_DETALLES,
+        payload: [],
+    });
 }
 
 // function onSearch(ciudad) {
